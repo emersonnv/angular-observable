@@ -7,5 +7,6 @@ import {Component, Input} from '@angular/core';
 })
 
 export class ComponentTwoComponent {
- @Input('input-component-two') entrada = "default";
+
+	.3
 }
