@@ -8,8 +8,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 
 export class ComponentOneComponent {
 	@Output() myAction = new EventEmitter<string>();
+  contador: number = 0;
 
 	onClickAction(): void {
-		this.myAction.emit('Acción realizada en el componente 1.');
+    this.contador ++;
+		this.myAction.emit('Contador desde component one : ' + this.contador);
 	}
 }

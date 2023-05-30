@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-	textTemp: string = '';
+	valorDesdeComponentOne: string = '';
 
 	myActionOutput(event: string): void {
-		this.textTemp = event;
+		this.valorDesdeComponentOne = event;
 	}
 }
